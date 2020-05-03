@@ -23,6 +23,11 @@
   "homepage": "https://github.com/tyolab/fourier-demo#readme",
   "dependencies": {
     "jimp": "^0.10.3",
-    "node-programmer": "0.0.15"
+    "node-programmer": "0.0.15",
+    "tyo-mq": "^0.2.14"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "express-static": "^1.2.6"
   }
 }

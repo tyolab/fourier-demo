@@ -5,11 +5,17 @@
  const tyoMQ = new (require('tyo-mq/lib/server'))();
  tyoMQ.start();
 
- var express = require('express')
-var serveStatic = require('serve-static')
+ var express = require('express');
+// var serveStatic = require('serve-static');
 
-var app = express()
+var app = express();
 
-app.use(serveStatic('public', { 'index': ['index.htm'] }))
-app.listen(6000)
+// app.use(serveStatic('public', { 'index': ['index.html'] }));
+
+// app.configure(function(){
+    //server.use('/media', express.static(__dirname + '/media'));
+    app.use(express.static(__dirname + '/public'));
+//   });
+
+app.listen(3000);
 

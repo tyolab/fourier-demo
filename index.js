@@ -3,6 +3,11 @@ var fs = require("fs"),
 
 const ImageArray = require('./lib/image_array');
 const block = require('./block');
+
+const Factory = require('tyo-mq/lib/factory');
+const factory = new Factory();
+
+const producer = factory.createProducer("fourier-magic");
  
 fs.createReadStream("public/images/demo.png")
   .pipe(

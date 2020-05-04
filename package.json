@@ -4,7 +4,8 @@
   "description": "A demo shows how lossy JPEG compression work",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browserify" : "browserify client.js -o public/js/fourier-magic-client.js"
   },
   "repository": {
     "type": "git",
